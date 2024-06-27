@@ -1,1 +1,6 @@
 Palette
+#274215 
+#85BB4D
+#CAD8D8
+#EEA402
+#DD7236
