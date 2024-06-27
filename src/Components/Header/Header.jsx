@@ -3,7 +3,7 @@ import './Header.css'
 
 export default function Header() {
   return (
-    <div>
+    <header>
       <div className='title'>inspiration</div>
       <div className='titlePanel'>
         <div className='login'>Login</div>
@@ -11,6 +11,6 @@ export default function Header() {
         <div className='theme'>Theme</div>
       </div>
       
-    </div>
+    </header>
   )
 }

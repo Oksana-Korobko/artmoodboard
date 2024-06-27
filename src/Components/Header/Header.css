@@ -1,9 +1,21 @@
+header {
+  height: 70px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
 .title {
-  max-width: 800px;
+  width: 70%;
+  text-align: center;
+  font-size: 24px;
   text-transform: uppercase;
   color: #000;
 }
 .titlePanel {
+  width: 30%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .login {
 }
