@@ -5,7 +5,7 @@ import PictureItem from '../PictureItem/PictureItem'
 
 export default function Board() {
   return (
-    <>
+    <div className='board'>
       <MainPicture />
       <PictureItem />
       <PictureItem />
@@ -14,6 +14,6 @@ export default function Board() {
       <PictureItem />
       <PictureItem />
       <PictureItem />
-    </>
+    </div>
   )
 }

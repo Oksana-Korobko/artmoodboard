@@ -3,6 +3,7 @@ header {
   align-items: center;
   display: flex;
   justify-content: center;
+  background-color: #eaf0f0;
 }
 .title {
   width: 70%;
@@ -15,7 +16,7 @@ header {
   width: 30%;
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 .login {
 }

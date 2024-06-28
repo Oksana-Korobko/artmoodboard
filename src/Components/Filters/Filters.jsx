@@ -3,6 +3,6 @@ import './Filters.css'
 
 export default function Filters() {
   return (
-    <div>Filters</div>
+    <div className='filters'>Filters</div>
   )
 }
