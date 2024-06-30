@@ -7,7 +7,7 @@ export default function PictureItem({item}) {
   console.log(item)
 
   useEffect(() => {
-    setSrc(item.src.tiny);
+    setSrc(item.src.small);
   }, [])
   
   return (

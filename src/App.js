@@ -11,9 +11,10 @@ function App() {
   const [data,setData] = useState([]);
   const client = createClient('bRl7IXvNx9GykmRGXzIpSjMKVPv6KA369K4oMyf7KKEimiQLJHHSMuXf');
   const query = 'Nature';
+  const orientation = 'square';
   
   useEffect(() => {    
-      client.photos.search({query, per_page: 9 }).then(photos => {
+      client.photos.search({query, orientation, per_page: 9 }).then(photos => {
       if (data.length===0 && photos) { setData(photos.photos)} 
            
     });      
