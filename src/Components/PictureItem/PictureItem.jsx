@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useState } from 'react'
 import './PictureItem.css'
 
-export default function PictureItem() {
+export default function PictureItem({item}) {
+  const [src, setSrc] = useState('') 
+  console.log(item)
+
+  useEffect(() => {
+    setSrc(item.src.tiny);
+  }, [])
+  
   return (
-    <div>PictureItem</div>
+    <div><img src = {src}/></div>
   )
 }

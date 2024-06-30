@@ -15,8 +15,7 @@ function App() {
   useEffect(() => {    
       client.photos.search({query, per_page: 9 }).then(photos => {
       if (data.length===0 && photos) { setData(photos.photos)} 
-      console.log(data) 
-      console.log('render1')          
+           
     });      
   }, [])
   

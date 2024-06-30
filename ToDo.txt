@@ -4,3 +4,5 @@ Palette
 #CAD8D8
 #EEA402
 #DD7236
+
+https://www.pexels.com/uk-ua/api/documentation/#search

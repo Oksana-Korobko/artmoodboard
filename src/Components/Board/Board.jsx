@@ -5,19 +5,15 @@ import PictureItem from '../PictureItem/PictureItem'
 
 export default function Board({data}) {
   const [main, setMain] = useState(0)
-  const [page, setPage] = useState(0)
-  console.log(data[main])
-  console.log('render2') 
+  // const [page, setPage] = useState(0)
+  
   return (
     <div className='board'>
       <MainPicture elem = {data[main]}/>
-      <PictureItem />
-      <PictureItem />
-      <PictureItem />
-      <PictureItem />
-      <PictureItem />
-      <PictureItem />
-      <PictureItem />
+      {data.map(item => (        
+        <PictureItem item={item} key = {item.id}/>
+      ))}
+      
     </div>
   )
 }

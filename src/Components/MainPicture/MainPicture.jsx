@@ -7,8 +7,7 @@ export default function MainPicture(main) {
   let url = main?.elem?.url
   useEffect(() => {
     if (url) {
-      setSrc(main.elem.src.medium)
-      console.log(src)    
+      setSrc(main.elem.src.medium)       
     } 
   }, [main])
   if (src){
