@@ -11,6 +11,6 @@ export default function PictureItem({item}) {
   }, [])
   
   return (
-    <div><img src = {src}/></div>
+    <div className='pictureArea'><img src = {src}/></div>
   )
 }

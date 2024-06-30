@@ -1,4 +1,5 @@
 .mainPictureDiv {
+  grid-area: main;
 }
 .mainPicture {
   width: 360px;

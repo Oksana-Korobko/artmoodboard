@@ -8,7 +8,7 @@ export default function Board({data}) {
   // const [page, setPage] = useState(0)
   
   return (
-    <div className='board'>
+    <div className='grid-container'>
       <MainPicture elem = {data[main]}/>
       {data.map(item => (        
         <PictureItem item={item} key = {item.id}/>
