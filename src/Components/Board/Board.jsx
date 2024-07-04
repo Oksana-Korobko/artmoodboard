@@ -10,7 +10,7 @@ export default function Board({data}) {
   return (
     <div className='grid-container'>
       <MainPicture elem = {data[main]}/>
-      {data.map(item => (        
+      {data.map((item) => (        
         <PictureItem item={item} key = {item.id}/>
       ))}
       
