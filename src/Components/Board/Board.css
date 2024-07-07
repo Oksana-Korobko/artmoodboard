@@ -1,7 +1,5 @@
-.grid-container {
+.layout {
   background-color: #eaf2df;
-  grid-template-areas:
-    "main main i1 i2"
-    "main main i3 i4"
-    "i5 i6 i7 i8";
+  margin: 10px auto;
+  padding: 10px;
 }
