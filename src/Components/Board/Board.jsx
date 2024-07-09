@@ -18,15 +18,15 @@ export default function Board() {
   const orientation = 'square';
 
   const  layout  =  [ 
-    {  i : "main" ,  x : 0 ,  y : 0 ,  w : 2 ,  h : 2 } , 
-    {  i : "i1" ,  x : 2 ,  y : 0 ,  w : 1 ,  h : 1 } , 
-    {  i : "i2" ,  x : 3 ,  y : 0 ,  w : 1 ,  h : 1 } ,
-    {  i : "i3" ,  x : 2 ,  y : 1 ,  w : 1 ,  h : 1 } ,
-    {  i : "i4" ,  x : 3 ,  y : 1 ,  w : 1 ,  h : 1 } ,
-    {  i : "i5" ,  x : 0 ,  y : 2 ,  w : 1 ,  h : 1 } ,
-    {  i : "i6" ,  x : 1 ,  y : 2 ,  w : 1 ,  h : 1 } ,
-    {  i : "i7" ,  x : 2 ,  y : 2 ,  w : 1 ,  h : 1 } ,
-    {  i : "i8" ,  x : 3 ,  y : 2 ,  w : 1 ,  h : 1 } 
+    {  i : "main" ,  x : 0 ,  y : 0 ,  w : 2 ,  h : 2 } ,     
+    {  i : "pic1" ,  x : 2 ,  y : 0 ,  w : 1 ,  h : 1 } , 
+    {  i : "1" ,  x : 3 ,  y : 0 ,  w : 1 ,  h : 1 } ,
+    {  i : "2" ,  x : 2 ,  y : 1 ,  w : 1 ,  h : 1 } ,
+    {  i : "3" ,  x : 3 ,  y : 1 ,  w : 1 ,  h : 1 } ,
+    {  i : "4" ,  x : 0 ,  y : 2 ,  w : 1 ,  h : 1 } ,
+    {  i : "5" ,  x : 1 ,  y : 2 ,  w : 1 ,  h : 1 } ,
+    {  i : "6" ,  x : 2 ,  y : 2 ,  w : 1 ,  h : 1 } ,
+    {  i : "7" ,  x : 3 ,  y : 2 ,  w : 1 ,  h : 1 } 
 
     
   ] ; 
@@ -39,28 +39,30 @@ export default function Board() {
   }, [])
   
   
+ 
   
   return (
 
     < GridLayout 
-        className = "layout" 
-        layout = { layout } 
-        cols = { 12 } 
-        rowHeight = { 30 } 
-        width = { 1200 } 
-      >
-        <div key="a">a</div>
-        <div key="b">b</div>
-        <div key="c">c</div>
-      </GridLayout>
+      className="layout"
+      layout={layout}
+      cols={4}
+      rowHeight={100}
+      width={1200}
+    >
+        <MainPicture key="main" elem = {data[main]}/>
+       
+        <div key="pic1"> <PictureItem item={data[1]} key = '1'/></div>
+        <div key="i2"> <PictureItem item={data[2]} key = '2'/></div>
+    </GridLayout>
 
 
-    
+    // {data.map((item, num) => (        
+    //   <PictureItem item={item} key = {num+''}/>                  
+    //   )         
+    // )}
       
-      // { {data.map((item) => (        
-      //   <PictureItem item={item} key = {item.id}/>
-      // ))} */}
-      
+     
     
   )
 }

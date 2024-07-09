@@ -13,6 +13,7 @@ export default function MainPicture(main) {
   if (src){
     return (
       <div className='mainPictureDiv'>
+        {/* mainPicture */}
         <img src = {src} className='mainPicture'/>
       </div>
     )
