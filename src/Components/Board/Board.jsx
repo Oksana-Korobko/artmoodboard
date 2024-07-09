@@ -17,19 +17,19 @@ export default function Board() {
   const query = 'forest';
   const orientation = 'square';
 
-  const  layout  =  [ 
-    {  i : "main" ,  x : 0 ,  y : 0 ,  w : 2 ,  h : 2 } ,     
-    {  i : "pic1" ,  x : 2 ,  y : 0 ,  w : 1 ,  h : 1 } , 
-    {  i : "1" ,  x : 3 ,  y : 0 ,  w : 1 ,  h : 1 } ,
-    {  i : "2" ,  x : 2 ,  y : 1 ,  w : 1 ,  h : 1 } ,
-    {  i : "3" ,  x : 3 ,  y : 1 ,  w : 1 ,  h : 1 } ,
-    {  i : "4" ,  x : 0 ,  y : 2 ,  w : 1 ,  h : 1 } ,
-    {  i : "5" ,  x : 1 ,  y : 2 ,  w : 1 ,  h : 1 } ,
-    {  i : "6" ,  x : 2 ,  y : 2 ,  w : 1 ,  h : 1 } ,
-    {  i : "7" ,  x : 3 ,  y : 2 ,  w : 1 ,  h : 1 } 
+  // const  layout  =  [ 
+  //   {  i : "main" ,  x : 0 ,  y : 0 ,  w : 2 ,  h : 2 } ,     
+  //   {  i : "pic1" ,  x : 2 ,  y : 0 ,  w : 1 ,  h : 1 } , 
+  //   {  i : "1" ,  x : 3 ,  y : 0 ,  w : 1 ,  h : 1 } ,
+  //   {  i : "2" ,  x : 2 ,  y : 1 ,  w : 1 ,  h : 1 } ,
+  //   {  i : "3" ,  x : 3 ,  y : 1 ,  w : 1 ,  h : 1 } ,
+  //   {  i : "4" ,  x : 0 ,  y : 2 ,  w : 1 ,  h : 1 } ,
+  //   {  i : "5" ,  x : 1 ,  y : 2 ,  w : 1 ,  h : 1 } ,
+  //   {  i : "6" ,  x : 2 ,  y : 2 ,  w : 1 ,  h : 1 } ,
+  //   {  i : "7" ,  x : 3 ,  y : 2 ,  w : 1 ,  h : 1 } 
 
     
-  ] ; 
+  // ] ; 
   
   useEffect(() => {    
       client.photos.search({query, orientation, per_page: 9 }).then(photos => {
@@ -43,18 +43,33 @@ export default function Board() {
   
   return (
 
-    < GridLayout 
-      className="layout"
-      layout={layout}
-      cols={4}
-      rowHeight={100}
-      width={1200}
-    >
-        <MainPicture key="main" elem = {data[main]}/>
+    <GridLayout className="layout" cols={4} rowHeight={300} width={900}>
+    {/* <MainPicture key="main" elem = {data[main]} data-grid={{ x: 0, y: 0, w: 2, h: 2, static: true }}/> */}
+    <div key="a" data-grid={{ x: 0, y: 0, w: 1, h: 2, static: true }}>
+      <MainPicture key="main" elem = {data[main]} />
+    </div>
+    <div key="b" data-grid={{ x: 2, y: 0, w: 1, h: 1, static: true}}>
+     <PictureItem item={data[1]} key = '1'/>
+    </div>
+    <div key="c" data-grid={{ x: 4, y: 0, w: 1, h: 2 }}>
+    <PictureItem item={data[2]} key = '2'/>
+    </div>
+  </GridLayout>
+
+
+
+    // < GridLayout 
+    //   className="layout"
+    //   layout={layout}
+    //   cols={4}
+    //   rowHeight={100}
+    //   width={1200}
+    // >
+    //     <MainPicture key="main" elem = {data[main]}/>
        
-        <div key="pic1"> <PictureItem item={data[1]} key = '1'/></div>
-        <div key="i2"> <PictureItem item={data[2]} key = '2'/></div>
-    </GridLayout>
+    //     <div key="pic1"> <PictureItem item={data[1]} key = '1'/></div>
+    //     <div key="i2"> <PictureItem item={data[2]} key = '2'/></div>
+    // </GridLayout>
 
 
     // {data.map((item, num) => (        
