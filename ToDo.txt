@@ -6,3 +6,5 @@ Palette
 #DD7236
 
 https://www.pexels.com/uk-ua/api/documentation/#search
+
+без сітки
