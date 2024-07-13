@@ -14,7 +14,7 @@ export default function PictureItem({item}) {
   if (src){
     return (
       <div className='pictureArea'>
-        {/* picture */}
+      
         <img src = {src} />
       </div>
     )
