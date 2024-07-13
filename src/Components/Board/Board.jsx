@@ -17,19 +17,19 @@ export default function Board() {
   const query = 'forest';
   const orientation = 'square';
 
-  // const  layout  =  [ 
-  //   {  i : "main" ,  x : 0 ,  y : 0 ,  w : 2 ,  h : 2 } ,     
-  //   {  i : "pic1" ,  x : 2 ,  y : 0 ,  w : 1 ,  h : 1 } , 
-  //   {  i : "1" ,  x : 3 ,  y : 0 ,  w : 1 ,  h : 1 } ,
-  //   {  i : "2" ,  x : 2 ,  y : 1 ,  w : 1 ,  h : 1 } ,
-  //   {  i : "3" ,  x : 3 ,  y : 1 ,  w : 1 ,  h : 1 } ,
-  //   {  i : "4" ,  x : 0 ,  y : 2 ,  w : 1 ,  h : 1 } ,
-  //   {  i : "5" ,  x : 1 ,  y : 2 ,  w : 1 ,  h : 1 } ,
-  //   {  i : "6" ,  x : 2 ,  y : 2 ,  w : 1 ,  h : 1 } ,
-  //   {  i : "7" ,  x : 3 ,  y : 2 ,  w : 1 ,  h : 1 } 
+  const  layout  =  [ 
+    {  i : "main" ,  x : 0 ,  y : 0 ,  w : 2 ,  h : 2 } ,     
+    {  i : "pic1" ,  x : 2 ,  y : 0 ,  w : 1 ,  h : 1 } , 
+    {  i : "1" ,  x : 3 ,  y : 0 ,  w : 1 ,  h : 1 } ,
+    {  i : "2" ,  x : 2 ,  y : 1 ,  w : 1 ,  h : 1 } ,
+    {  i : "3" ,  x : 3 ,  y : 1 ,  w : 1 ,  h : 1 } ,
+    {  i : "4" ,  x : 0 ,  y : 2 ,  w : 1 ,  h : 1 } ,
+    {  i : "5" ,  x : 1 ,  y : 2 ,  w : 1 ,  h : 1 } ,
+    {  i : "6" ,  x : 2 ,  y : 2 ,  w : 1 ,  h : 1 } ,
+    {  i : "7" ,  x : 3 ,  y : 2 ,  w : 1 ,  h : 1 } 
 
     
-  // ] ; 
+  ] ; 
   
   useEffect(() => {    
       client.photos.search({query, orientation, per_page: 9 }).then(photos => {
