@@ -5,12 +5,29 @@ import './PictureItem.css'
 export default function PictureItem({item}) {
   const [src, setSrc] = useState('') 
   console.log(item)
-
+  let url = item?.url
   useEffect(() => {
-    setSrc(item.src.tiny);
-  }, [])
-  
-  return (
-    <div><img src = {src}/></div>
-  )
+    if (url) {
+      setSrc(item.src.small)       
+    } 
+  }, [item])
+  if (src){
+    return (
+      <div className='pictureArea'>
+        {/* picture */}
+        <img src = {src} />
+      </div>
+    )
+  } else {
+    return (
+      <div>
+        LOADING
+      </div>
+    )
+  }
+
+
+
+
+
 }
