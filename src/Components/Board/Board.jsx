@@ -11,11 +11,11 @@ import { createClient } from 'pexels';
 export default function Board() {
   const [data,setData] = useState([]);
   const client = createClient('bRl7IXvNx9GykmRGXzIpSjMKVPv6KA369K4oMyf7KKEimiQLJHHSMuXf');
-  const query = 'Nature';
+  const query = 'sea sunrise';
   
   let main = 0
   useEffect(() => {    
-      client.photos.search({query, orientation: 'square', per_page: 17 }).then(photos => {
+      client.photos.search({query, orientation: 'square', per_page: 25 }).then(photos => {
       if (data.length===0 && photos) { setData(photos.photos)} 
            
     });      
