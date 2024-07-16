@@ -4,6 +4,7 @@ import './App.css';
 import Filters from './Components/Filters/Filters';
 import Header from './Components/Header/Header';
 import Board from './Components/Board/Board'
+import Grid from './Components/Grid/Grid';
 // import { useEffect, useState } from 'react';
 // import { createClient } from 'pexels';
 
@@ -27,7 +28,8 @@ function App() {
     <div className="App">
       <Header />
       <Filters />
-      <Board />
+      <Grid />
+      {/* <Board /> */}
     </div>
   );
 }
