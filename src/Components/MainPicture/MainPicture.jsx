@@ -7,12 +7,12 @@ export default function MainPicture(main) {
   let url = main?.elem?.url
   useEffect(() => {
     if (url) {
-      setSrc(main.elem.src.medium)       
+      setSrc(main.elem.src.large)       
     } 
   }, [main])
   if (src){
     return (
-      <div>
+      <div className='block'>
         <img src = {src}/>
       </div>
     )
