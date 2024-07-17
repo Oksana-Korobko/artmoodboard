@@ -2,9 +2,9 @@
   overflow: hidden;
   padding: 5px;
   margin-bottom: 4px;
-  border-radius: 5px;
 }
 .block > img {
   width: 100%;
   height: auto;
+  border-radius: 5px;
 }

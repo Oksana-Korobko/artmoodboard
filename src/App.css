@@ -3,3 +3,10 @@
   margin: 10px auto;
   padding: 10px;
 }
+footer {
+  font-weight: 500;
+  color: #316481;
+  height: 40px;
+  text-align: center;
+  background-color: rgb(238, 240, 241);
+}

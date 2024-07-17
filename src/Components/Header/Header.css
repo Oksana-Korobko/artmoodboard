@@ -1,16 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 header {
   height: 70px;
   align-items: center;
   display: flex;
   justify-content: center;
-  background-color: #eaf0f0;
+  background-color: rgb(238, 240, 241);
 }
 .title {
   width: 70%;
-  text-align: center;
-  font-size: 24px;
+  margin-left: 50px;
+  font-size: 36px;
   text-transform: uppercase;
-  color: #000;
+  color: #316481;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 .titlePanel {
   width: 30%;
@@ -21,6 +26,8 @@ header {
 .login {
 }
 .language {
+  font-weight: 500;
+  color: #316481;
 }
 .theme {
 }

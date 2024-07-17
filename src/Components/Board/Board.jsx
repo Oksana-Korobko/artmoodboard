@@ -32,7 +32,7 @@ export default function Board() {
         <Col  sm = {12} md = {6}>
           <Row >
             {data.map((item, i) => ( 
-              (i>0) && (<Col sm={3}><PictureItem item={item} key = {item.id}/></Col> )             
+              (i>0) && (<Col sm = {4} md={3}><PictureItem item={item} key = {item.id}/></Col> )             
             ))}
           </Row>          
         </Col>

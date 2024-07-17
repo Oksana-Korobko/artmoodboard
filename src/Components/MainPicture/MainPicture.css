@@ -1,7 +1,23 @@
 .block {
   overflow: hidden;
+  position: relative;
+}
+.visibility {
+  position: absolute;
+  z-index: 3;
+  right: 20px;
+  top: 20px;
+}
+.favorite {
+  position: absolute;
+  z-index: 3;
+  right: 60px;
+  top: 20px;
 }
 .block > img {
   width: 100%;
   height: auto;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
 }

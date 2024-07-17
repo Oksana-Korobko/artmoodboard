@@ -25,6 +25,7 @@ function App() {
       <Header />
       <Filters />
       <Board />
+      <footer>Створено Оксаною Коробко для натхнення. Творіть, друзі! </footer>
     </div>
   );
 }
