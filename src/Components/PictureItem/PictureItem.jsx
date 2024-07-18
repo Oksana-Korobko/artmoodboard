@@ -2,15 +2,15 @@ import React, { useEffect } from 'react'
 import { useState } from 'react'
 import './PictureItem.css'
 
-export default function PictureItem({item}) {
+export default function PictureItem({item, onChoiceMain}) {
   const [src, setSrc] = useState('') 
-  console.log(item)
+
 
   useEffect(() => {
-    setSrc(item.src.tiny);
+    setSrc(item.src.large);
   }, [])
   
   return (
-    <div className='block'><img src = {src}/></div>
+    <div className='block'><img src = {src} onClick={()=>{{onChoiceMain(src)}}}/></div>
   )
 }
