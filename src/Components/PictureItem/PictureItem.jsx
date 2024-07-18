@@ -11,6 +11,6 @@ export default function PictureItem({item, onChoiceMain}) {
   }, [])
   
   return (
-    <div className='block'><img src = {src} onClick={()=>{{onChoiceMain(src)}}}/></div>
+    <div className='block'><img alt = {'referens'} src = {src} onClick={()=>{{onChoiceMain(src)}}}/></div>
   )
 }

@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import './MainPicture.css'
 
 export default function MainPicture(mainPic) { 
-  console.log(mainPic)
+  
   return (
         <div className='block'>
           <div className='visibility'>

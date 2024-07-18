@@ -12,7 +12,7 @@ export default function Board() {
   const [data,setData] = useState([]);
   const [main, setMain] = useState('https://www.myselfhelphabit.co.uk/wp-content/uploads/2021/06/Inspiration-Board-iStock-1186119576.jpg')
   const client = createClient('bRl7IXvNx9GykmRGXzIpSjMKVPv6KA369K4oMyf7KKEimiQLJHHSMuXf');
-  const query = 'sea sunrise';
+  const query = 'sunrise';
    
   useEffect(() => {    
       client.photos.search({query, orientation: 'square', per_page: 25 }).then(photos => {
@@ -21,9 +21,6 @@ export default function Board() {
     });      
   }, [])
   
-  
-  console.log('render')
-  console.log(main)
   
   const onChoiceMain = (main) => {
     setMain(main);
