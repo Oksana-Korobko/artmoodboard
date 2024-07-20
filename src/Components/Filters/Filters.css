@@ -10,4 +10,9 @@
   padding-top: 10px;
   color: #fff;
   text-transform: uppercase;
+  border-bottom: #d26077 1px solid;
+}
+.filtersNuv > li:hover {
+  cursor: pointer;
+  border-bottom: #fff 1px solid;
 }

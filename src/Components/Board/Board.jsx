@@ -13,19 +13,19 @@ export default function Board({query}) {
   const [data,setData] = useState([]);
   const [main, setMain] = useState('https://www.myselfhelphabit.co.uk/wp-content/uploads/2021/06/Inspiration-Board-iStock-1186119576.jpg')
   const client = createClient('bRl7IXvNx9GykmRGXzIpSjMKVPv6KA369K4oMyf7KKEimiQLJHHSMuXf');
-  // const query = 'sunrise';
-   
+  // const query = 'winter forest';
+ 
   useEffect(() => {    
       client.photos.search({query, orientation: 'square', per_page: 17 }).then(photos => {
-      if (data.length===0 && photos) { setData(photos.photos) } 
+      if ( photos) { setData(photos.photos) } 
          
     });      
-  }, [])
+  }, [query])
   
+ 
   
   const onChoiceMain = (main) => {
-    setMain(main);
-    
+    setMain(main);    
   }
 
   

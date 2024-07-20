@@ -1,19 +1,19 @@
 import React from 'react'
 import './Filters.css'
 
-export default function Filters(query, onChangeQuery) {
+export default function Filters({onFilter,query}) {
   return (
     <div className='filters'>
       <ul className='filtersNuv'>
-        <li onClick={() => {{onChangeQuery('nature')}}}>Nature</li>
-        <li onClick={() => {{onChangeQuery('Ocean')}}}>Ocean</li>
-        <li onClick={() => {{onChangeQuery('City')}}}>City</li>
-        <li onClick={() => {{onChangeQuery('Portrait')}}}>Portrait</li>
-        <li onClick={() => {{onChangeQuery('Minimalism')}}}>Minimalism</li>
-        <li onClick={() => {{onChangeQuery('Art')}}}>Art</li>
-        <li onClick={() => {{onChangeQuery('Vehicle')}}}>Vehicle</li>
-        <li onClick={() => {{onChangeQuery('Sunrise')}}}>Sunrise</li>
-        <li onClick={() => {{onChangeQuery('Sky')}}}>Sky</li>
+        <li onClick={() => {{onFilter('nature')}}}>Nature</li>
+        <li onClick={() => {{onFilter('Ocean')}}}>Ocean</li>
+        <li onClick={() => {{onFilter('City')}}}>City</li>
+        <li onClick={() => {{onFilter('Portrait')}}}>Portrait</li>
+        <li onClick={() => {{onFilter('Minimalism')}}}>Minimalism</li>
+        <li onClick={() => {{onFilter('Art')}}}>Art</li>
+        <li onClick={() => {{onFilter('Vehicle')}}}>Vehicle</li>
+        <li onClick={() => {{onFilter('Sunrise')}}}>Sunrise</li>
+        <li onClick={() => {{onFilter('Sky')}}}>Sky</li>
       </ul>
     </div>
   )

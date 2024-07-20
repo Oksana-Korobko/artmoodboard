@@ -3,6 +3,9 @@
   padding: 5px;
   margin: 12px 0;
 }
+.block:hover {
+  cursor: pointer;
+}
 .block > img {
   width: 100%;
   height: auto;
