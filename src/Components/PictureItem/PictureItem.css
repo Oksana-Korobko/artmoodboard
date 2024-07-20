@@ -1,7 +1,7 @@
 .block {
   overflow: hidden;
   padding: 5px;
-  margin-bottom: 4px;
+  margin: 12px 0;
 }
 .block > img {
   width: 100%;

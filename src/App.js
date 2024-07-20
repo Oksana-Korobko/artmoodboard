@@ -1,4 +1,5 @@
 import './App.css';
+import React, {useState} from 'react'
 import Filters from './Components/Filters/Filters';
 import Header from './Components/Header/Header';
 import Board from './Components/Board/Board'
@@ -8,23 +9,18 @@ import Board from './Components/Board/Board'
 // bRl7IXvNx9GykmRGXzIpSjMKVPv6KA369K4oMyf7KKEimiQLJHHSMuXf
 
 function App() {
-  // const [data,setData] = useState([]);
-  // const client = createClient('bRl7IXvNx9GykmRGXzIpSjMKVPv6KA369K4oMyf7KKEimiQLJHHSMuXf');
-  // const query = 'Nature';
+  const [query,setQuery] = useState('nature')
   
-  // useEffect(() => {    
-  //     client.photos.search({query, per_page: 9 }).then(photos => {
-  //     if (data.length===0 && photos) { setData(photos.photos)} 
-           
-  //   });      
-  // }, [])
+  const onChangeQuery = (query) => {
+    setQuery(query)
+  }
   
   
   return (
     <div className="App">
       <Header />
-      <Filters />
-      <Board />
+      <Filters onChangeQuery = {onChangeQuery}/>
+      <Board query={query}/>
       <footer>Створено Оксаною Коробко для натхнення. Творіть, друзі! </footer>
     </div>
   );
