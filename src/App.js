@@ -9,8 +9,14 @@ import Board from './Components/Board/Board'
 
 function App() {
   const [query,setQuery] = useState('minimalism')
+  const [theme, setTheme] = useState('light')
+  const onSwitchTheme = (theme) => {
+    // setTheme((cur) => cur==="light"? "dark" : "light")
+    console.log(theme)
+  }
 
   
+
   const onChangeQuery = (query) => {
     setQuery(query)
   }
@@ -22,7 +28,7 @@ function App() {
   // console.log('render')
   return (
     <div className="App">
-      <Header onChangeQuery = {onChangeQuery}/>
+      <Header theme = {theme} onSwitchTheme = {onSwitchTheme} />
       <Filters onFilter = {onFilter} query={query}/>
       <Board query={query}/>
       <footer>Створено Оксаною Коробко для натхнення. Творіть, друзі! </footer>

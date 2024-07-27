@@ -1,8 +1,6 @@
 Palette
-#274215 
-#85BB4D
-#CAD8D8
-#EEA402
-#DD7236
-
+#eef0f1 light
+#316481 blue
+#d26077 pink
+#21313a dark
 https://www.pexels.com/uk-ua/api/documentation/#search

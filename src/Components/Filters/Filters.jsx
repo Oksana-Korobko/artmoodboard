@@ -8,7 +8,7 @@ export default function Filters({onFilter,query}) {
         <li onClick={() => {{onFilter('nature')}}}>Nature</li>
         <li onClick={() => {{onFilter('Ocean')}}}>Ocean</li>
         <li onClick={() => {{onFilter('City')}}}>City</li>
-        <li onClick={() => {{onFilter('Portrait')}}}>Portrait</li>
+        <li onClick={() => {{onFilter('Peoples')}}}>Peoples</li>
         <li onClick={() => {{onFilter('Minimalism')}}}>Minimalism</li>
         <li onClick={() => {{onFilter('Art')}}}>Art</li>
         <li onClick={() => {{onFilter('Vehicle')}}}>Vehicle</li>
